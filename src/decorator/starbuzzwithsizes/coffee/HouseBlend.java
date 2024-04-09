@@ -1,0 +1,17 @@
+package decorator.starbuzzwithsizes.coffee;
+
+import decorator.starbuzzwithsizes.Beverage;
+
+/**
+ * @author lh
+ */
+public class HouseBlend extends Beverage {
+    public HouseBlend() {
+        description = "House Blend Coffee";
+    }
+
+    @Override
+    public double cost() {
+        return 0.89;
+    }
+}
