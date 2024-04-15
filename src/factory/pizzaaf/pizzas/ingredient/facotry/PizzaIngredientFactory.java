@@ -1,0 +1,16 @@
+package factory.pizzaaf.pizzas.ingredient.facotry;
+
+import factory.pizzaaf.pizzas.ingredient.*;
+
+/**
+ * @author lh
+ */
+public  interface PizzaIngredientFactory {
+    public Dough createDough();
+    public Sauce createSauce();
+    public Cheese createCheese();
+    public Veggies[] createVeggies();
+
+    public Pepperoni createPepperoni();
+    public Clams createClam();
+}
