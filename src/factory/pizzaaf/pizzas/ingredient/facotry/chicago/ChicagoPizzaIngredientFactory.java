@@ -1,0 +1,46 @@
+package factory.pizzaaf.pizzas.ingredient.facotry.chicago;
+
+import factory.pizzaaf.pizzas.ingredient.*;
+import factory.pizzaaf.pizzas.ingredient.chicago.*;
+import factory.pizzaaf.pizzas.ingredient.facotry.PizzaIngredientFactory;
+import factory.pizzaaf.pizzas.ingredient.share.SlicedPepperoni;
+
+/**
+ * @author lh
+ */
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
+    @Override
+    public Dough createDough() {
+        return new ThickCrustDough();
+    }
+
+    @Override
+    public Sauce createSauce() {
+        return new PlumTomatoSauce();
+    }
+
+    @Override
+    public Cheese createCheese() {
+        return new MozzarellaCheese();
+    }
+
+    @Override
+    public Veggies[] createVeggies() {
+        Veggies[] veggies = {
+                new BlackOlives(),
+                new Spinach(),
+                new Eggplant()
+        };
+        return veggies;
+    }
+
+    @Override
+    public Pepperoni createPepperoni() {
+        return new SlicedPepperoni();
+    }
+
+    @Override
+    public Clams createClam() {
+        return new FrozenClams();
+    }
+}
