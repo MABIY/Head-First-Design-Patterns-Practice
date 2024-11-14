@@ -4,16 +4,18 @@ package strategy.version2.duck;
 import strategy.version2.behavior.fly.FlyBehavior;
 import strategy.version2.behavior.quack.QuackBehavior;
 
+import java.util.Objects;
+
 /**
  * @author lh
  */
 public abstract class Duck implements FlyBehavior, QuackBehavior {
-    protected  FlyBehavior flyBehavior;
-    protected  QuackBehavior quackBehavior;
+    private FlyBehavior flyBehavior;
+    private QuackBehavior quackBehavior;
 
     public Duck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
-        this.flyBehavior = flyBehavior;
-        this.quackBehavior = quackBehavior;
+        setFlyBehavior(flyBehavior);
+        setQuackBehavior(quackBehavior);
     }
 
     public abstract void display();
@@ -29,10 +31,12 @@ public abstract class Duck implements FlyBehavior, QuackBehavior {
     }
 
     public void setFlyBehavior(FlyBehavior flyBehavior) {
+        Objects.requireNonNull(flyBehavior);
         this.flyBehavior = flyBehavior;
     }
 
     public void setQuackBehavior(QuackBehavior quackBehavior) {
+        Objects.requireNonNull(quackBehavior);
         this.quackBehavior = quackBehavior;
     }
 }
