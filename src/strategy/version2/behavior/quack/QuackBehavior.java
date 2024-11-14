@@ -1,4 +1,4 @@
-package strategy.behavior.quack;
+package strategy.version2.behavior.quack;
 
 /**
  * @author lh

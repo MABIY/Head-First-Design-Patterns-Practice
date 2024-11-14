@@ -1,8 +1,8 @@
-package strategy.duck.impl;
+package strategy.version1.duck.impl;
 
-import strategy.behavior.fly.impl.FlyNoWay;
-import strategy.behavior.quack.imp.Quack;
-import strategy.duck.Duck;
+import strategy.version1.behavior.fly.impl.FlyNoWay;
+import strategy.version1.behavior.quack.imp.Quack;
+import strategy.version1.duck.Duck;
 
 /**
  * @author lh

@@ -1,6 +1,6 @@
-package strategy.behavior.quack.imp;
+package strategy.version1.behavior.quack.imp;
 
-import strategy.behavior.quack.QuackBehavior;
+import strategy.version1.behavior.quack.QuackBehavior;
 
 /**
  * @author lh

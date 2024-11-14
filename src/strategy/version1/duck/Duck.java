@@ -1,7 +1,7 @@
-package strategy.duck;
+package strategy.version1.duck;
 
-import strategy.behavior.fly.FlyBehavior;
-import strategy.behavior.quack.QuackBehavior;
+import strategy.version1.behavior.fly.FlyBehavior;
+import strategy.version1.behavior.quack.QuackBehavior;
 
 /**
  * @author lh

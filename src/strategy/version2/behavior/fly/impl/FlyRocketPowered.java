@@ -1,4 +1,6 @@
-package strategy.behavior.fly;
+package strategy.version2.behavior.fly.impl;
+
+import strategy.version2.behavior.fly.FlyBehavior;
 
 /**
  * @author lh

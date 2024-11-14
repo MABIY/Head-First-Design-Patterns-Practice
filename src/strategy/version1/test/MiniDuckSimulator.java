@@ -1,9 +1,9 @@
-package strategy.test;
+package strategy.version1.test;
 
-import strategy.behavior.fly.FlyRocketPowered;
-import strategy.duck.Duck;
-import strategy.duck.impl.MallardDuck;
-import strategy.duck.impl.ModelDuck;
+import strategy.version1.behavior.fly.impl.FlyRocketPowered;
+import strategy.version1.duck.Duck;
+import strategy.version1.duck.impl.MallardDuck;
+import strategy.version1.duck.impl.ModelDuck;
 
 /**
  * @author lh
