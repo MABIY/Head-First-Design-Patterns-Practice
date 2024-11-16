@@ -1,7 +1,7 @@
 package strategy.version1.duck;
 
-import strategy.version1.behavior.fly.FlyBehavior;
-import strategy.version1.behavior.quack.QuackBehavior;
+import strategy.version1.duck.behavior.fly.FlyBehavior;
+import strategy.version1.duck.behavior.quack.QuackBehavior;
 
 /**
  * @author lh
@@ -10,7 +10,9 @@ public abstract class Duck {
     protected FlyBehavior flyBehavior;
     protected QuackBehavior quackBehavior;
 
-    public Duck() {
+    public Duck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+        setFlyBehavior(flyBehavior);
+        setQuackBehavior(quackBehavior);
     }
 
     public abstract void display();

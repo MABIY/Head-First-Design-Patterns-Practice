@@ -1,29 +1,25 @@
 package strategy.version1.duck.impl;
 
+import strategy.version1.duck.Duck;
 import strategy.version1.duck.behavior.fly.FlyBehavior;
 import strategy.version1.duck.behavior.fly.impl.FlyWithWings;
 import strategy.version1.duck.behavior.quack.QuackBehavior;
 import strategy.version1.duck.behavior.quack.impl.Quack;
-import strategy.version1.duck.Duck;
 
 /**
  * @author lh
  */
-public class MallardDuck extends Duck {
-
-    public MallardDuck() {
-        super(new FlyWithWings(), new Quack());
+public class RedHeadDuck extends Duck {
+    public RedHeadDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+        super(flyBehavior, quackBehavior);
     }
 
-    public MallardDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
-        super(flyBehavior, quackBehavior);
+    public RedHeadDuck() {
+        super(new FlyWithWings(), new Quack());
     }
 
     @Override
     public void display() {
-        System.out.println("I'm a real Mallard duck");
-
+        System.out.println("I'm a real Red Headed duck");
     }
-
-
 }

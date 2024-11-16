@@ -4,22 +4,23 @@ import strategy.version1.duck.Duck;
 import strategy.version1.duck.behavior.fly.FlyBehavior;
 import strategy.version1.duck.behavior.fly.impl.FlyNoWay;
 import strategy.version1.duck.behavior.quack.QuackBehavior;
-import strategy.version1.duck.behavior.quack.impl.Quack;
+import strategy.version1.duck.behavior.quack.impl.MuteQuack;
 
 /**
  * @author lh
  */
-public class ModelDuck extends Duck {
-    public ModelDuck() {
-        super(new FlyNoWay(), new Quack());
+public class DecoyDuck extends Duck {
+
+    public DecoyDuck() {
+        super(new FlyNoWay(), new MuteQuack());
     }
 
-    public ModelDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+    public DecoyDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
         super(flyBehavior, quackBehavior);
     }
 
     @Override
     public void display() {
-        System.out.println("I'm a model duck");
+        System.out.println("I'm a duck Decoy");
     }
 }

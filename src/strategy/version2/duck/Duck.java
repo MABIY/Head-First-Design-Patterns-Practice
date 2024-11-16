@@ -1,8 +1,8 @@
 package strategy.version2.duck;
 
 
-import strategy.version2.behavior.fly.FlyBehavior;
-import strategy.version2.behavior.quack.QuackBehavior;
+import strategy.version2.duck.behavior.fly.FlyBehavior;
+import strategy.version2.duck.behavior.quack.QuackBehavior;
 
 import java.util.Objects;
 

@@ -9,21 +9,17 @@ import strategy.version2.duck.behavior.quack.impl.Quack;
 /**
  * @author lh
  */
-public class MallardDuck extends Duck {
-
-    public MallardDuck() {
-        super(new FlyWithWings(), new Quack());
+public class RedHeadDuck extends Duck {
+    public RedHeadDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+        super(flyBehavior, quackBehavior);
     }
 
-    public MallardDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
-        super(flyBehavior, quackBehavior);
+    public RedHeadDuck() {
+        super(new FlyWithWings(), new Quack());
     }
 
     @Override
     public void display() {
-        System.out.println("I'm a real Mallard duck");
-
+        System.out.println("I'm a real Red Headed duck");
     }
-
-
 }
